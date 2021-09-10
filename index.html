@@ -24,9 +24,9 @@
             <nav>
                 <ul class="site-nav list">
                     <!--<li lang="en" class="nav-item site-nav-logo"><a href="WebStudio">Web<span>Studio</span></a></li>-->
-                    <li class="nav-item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="nav-item"><a href="Контакты" class="link">Контакты</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-item-link link">Студия</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="nav-item-link link">Портфолио</a></li>
+                    <li class="nav-item"><a href="Контакты" class="nav-item-link link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="link-items list">
@@ -59,8 +59,14 @@
         <section class="hero">
             <div class="container">
                 <h1 class="title">Эффективные решения <br>для вашего бизнеса</h1>
-                <button class="button" type="button">Заказать услугу</button>
+                <button data-modal-open class="button" type="button">Заказать услугу</button>
             </div>
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal">
+                    <button  data-modal-close class="button" type="button">Закрыть</button>
+                </div>
+            </div>
+           
         </section>
         <!-- Преимущества -->
         <section class="text-benefits section">
@@ -123,13 +129,17 @@
                 <ul class="list-img">
                     <li>
                         <img src="images/box1.jpg" alt="Пишем программы" width="370" height="294" />
+                        <h3 class="list-img-text">Десктопные приложения</h3>
+
                     </li>
 
                     <li>
                         <img src="./images/box2.jpg" alt="Создаем мобильные приложения" width="370" height="294" />
+                         <h3 class="list-img-text">Мобильные приложения</h3>
                     </li>
                     <li>
                         <img src="./images/box3.jpg" alt="Создаем игры" width="370" height="294" />
+                         <h3 class="list-img-text">Дизайнерские решения</h3>
                     </li>
                 </ul>
             </div>
@@ -394,7 +404,7 @@
             </div>
         </div>
     </footer>
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
